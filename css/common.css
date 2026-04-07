@@ -1,0 +1,60 @@
+:root {
+    --bg-primary: #fcefe7;
+    --bg-primary-light: #fafafa;
+    --bg-accent: #4f4c4a;
+
+    --border-primary: #252525;
+    --border-light: #c0c0c0;
+
+    --font-primary: #333333;
+    --font-gray: #4f4c4a;
+    --font-white: #fff;
+    --font-accent: #baa8a2;
+}
+
+
+body {
+    font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: var(--font-primary);
+}
+
+.container {
+    width: min(1270px, 100%);
+    margin-inline: auto;
+    padding-inline: clamp(10px, 5vw, 100px);
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "p22-dearest", serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+
+    margin-bottom: 80px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #000;
+}
+
+.section-title::before {
+    margin-right: 20px;
+}
+
+.section-title::after {
+    margin-left: 20px;
+}
