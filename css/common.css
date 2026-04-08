@@ -12,6 +12,10 @@
     --font-accent: #baa8a2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: "dnp-shuei-mincho-pr6n", sans-serif;
@@ -29,6 +33,8 @@ body {
 
 section {
     margin-bottom: 100px;
+
+    scroll-margin-top: 60px;
 }
 
 .section-title {
@@ -57,4 +63,20 @@ section {
 
 .section-title::after {
     margin-left: 20px;
+}
+
+
+/* ------------------------------------------
+    Fade up animation
+---------------------------------------------*/
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* transition-delay: 0.2s; */
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }

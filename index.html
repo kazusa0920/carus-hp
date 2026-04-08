@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/pnb3mil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
@@ -32,63 +33,84 @@
     </div>
 
     <div class="layout">
+
+<!---------------------------------------------------------------------------------
+        Sidebar
+---------------------------------------------------------------------------------->
         
-            <!-- サイドバー -->
             <aside id="sidebar" class="sidebar">
                 <div class="sidebar-inner">
-    
-                    <!-- ロゴ -->
                     <div class="logo">
-                        <img src="img/Logo.png" alt="Salon Logo">
+                        <a href="#hero"><img src="img/Logo.png" alt="Salon Logo"></a>
                     </div>
-    
-                    <!-- ナビ -->
+
                     <nav class="nav">
-                        <ul>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#menu">MENU</a></li>
-                            <li><a href="#goods">GOODS</a></li>
-                            <li><a href="#access">ACCESS</a></li>
+                        <ul class="nav-list">
+                            <li>
+                                <div class="nav-icon">
+                                    <i class="fa-solid fa-feather"></i>
+                                    <a href="#about">ABOUT</a>
+                                </div>
+                                </li>
+                            <li>
+                                <div class="nav-icon">
+                                    <i class="fa-solid fa-list"></i>
+                                    <a href="#menu">MENU</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-icon">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <a href="#goods">GOODS</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a href="#access">ACCESS</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
     
-                    <!-- 予約ボタン -->
                     <div class="reservation">
-                        <a href="#" class="btn">予約する</a>
+                        <a href="https://tol-app.jp/s/haut3lyn48ts83lk0316" class="btn">予約する</a>
                     </div>
-    
-                    <!-- SNS -->
+
                     <div class="sns">
-                        <a href="#"><i class="fa-brands fa-line"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://line.me/R/ti/p/@201qqzyu"><i class="fa-brands fa-line"></i></a>
+                        <a href="https://www.instagram.com/carus.5117"><i class="fa-brands fa-instagram"></i></a>
                     </div>
     
                 </div>
             </aside>
 
+<!---------------------------------------------------------------------------------
+        Main
+---------------------------------------------------------------------------------->
             
             <main class="main">
                 
-                <section class="hero">
+                <section id="hero" class="hero">
                     <img src="img/unsplash_uikvlZV_P9Q.png" alt="Salon Image">
-                    <h1 class="hero-title">Carus</h1>
+                    <!-- <h1 class="hero-title">Carus</h1> -->
                 </section>
                 
                 <div class="container">
                 
-                    <section class="about">
-                        <h2 class="section-title">
+                    <section id="about" class="about">
+                        <h2 class="section-title fade-up">
                             <span>ABOUT</span>
                         </h2>
                     </section>
 
-                    <section class="menu">
-                        <h2 class="section-title">
+                    <section id="menu" class="menu">
+                        <h2 class="section-title fade-up">
                             <span>MENU</span>
                         </h2>
 
                         <div class="menu-contents">
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <img src="img/スクリーンショット 2026-03-31 152917.png" alt="">
                                 <div class="menu-text">
                                     <h3 class="menu-title">パラフィンパック体験コース</h3>
@@ -97,10 +119,12 @@
                                     ラベンダーのやさしい香りは、ストレスを和らげ、深いリラックスへと導いてくれるもの。ただ手を整えるだけじゃなく、心までゆるめるハンドケアを。忙しい毎日の中で、ふっと力が抜けるような時間をお届けします。</p>
                                 </div>
                                 <button class="menu-btn">
-                                    <p class="menu-btn-text">予約する</p>
+                                    <a href="https://tol-app.jp/s/haut3lyn48ts83lk0316/b7sa5l">
+                                        <p class="menu-btn-text">予約する</p>
+                                    </a>
                                 </button>
                             </div>
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <img src="img/スクリーンショット 2026-03-31 152917.png" alt="">
                                 <div class="menu-text">
                                     <h3 class="menu-title">パラフィンパック体験コース</h3>
@@ -114,7 +138,7 @@
                             </div>
 
 
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <img src="img/スクリーンショット 2026-03-31 152917.png" alt="">
                                 <div class="menu-text">
                                     <h3 class="menu-title">パラフィンパック体験コース</h3>
@@ -126,7 +150,7 @@
                                     <p class="menu-btn-text">予約する</p>
                                 </button>
                             </div>
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <img src="img/スクリーンショット 2026-03-31 152917.png" alt="">
                                 <div class="menu-text">
                                     <h3 class="menu-title">パラフィンパック体験コース</h3>
@@ -138,7 +162,7 @@
                                     <p class="menu-btn-text">予約する</p>
                                 </button>
                             </div>
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <div class="menu-text">
                                     <h3 class="menu-title">学割コース（HBL眉）</h3>
                                     <p class="menu-price">30分 / 3,000円</p>
@@ -148,7 +172,7 @@
                                     <p class="menu-btn-text">予約する</p>
                                 </button>
                             </div>
-                            <div class="menu-content">
+                            <div class="menu-content fade-up">
                                 <div class="menu-text">
                                     <h3 class="menu-title">初回HBL眉</h3>
                                     <p class="menu-price">30分 / 3,000円</p>
@@ -161,13 +185,13 @@
                         </div>
                     </section>
 
-                    <section class="goods">
-                        <h2 class="section-title">
+                    <section id="goods" class="goods">
+                        <h2 class="section-title fade-up">
                             <span>GOODS</span>
                         </h2>
 
                         <div class="goods-contents">
-                            <div class="goods-content">
+                            <div class="goods-content fade-up">
                                 <img src="img/goods/image 5.jpg" alt="">
                                 <div class="goods-text">
                                     <h3 class="goods-title">HBL 3Dクッションブロウ</h3>
@@ -175,7 +199,7 @@
                                         <br>美容成分、たっぷり82％。描くたびに、眉まわりの肌をうるおし整える"育てる眉メイク"</p>
                                 </div>
                             </div>
-                            <div class="goods-content">
+                            <div class="goods-content fade-up">
                                 <img src="img/goods/image 6.jpg" alt="">
                                 <div class="goods-text">
                                     <h3 class="goods-title">HBL 3Dクッションブロウ 02 ライトブラウン</h3>
@@ -186,17 +210,17 @@
                         </div>
                     </section>
 
-                    <section class="access">
-                        <h2 class="section-title">
+                    <section id="access" class="access">
+                        <h2 class="section-title fade-up">
                             <span>ACCESS</span>
                         </h2>
 
                         <div class="access-contents">
                             <div class="access-content-left">
-                                <ul class="access-list">
+                                <ul class="access-list fade-up">
                                     <li class="access-list-item">
                                         <h3>住所</h3>
-                                        <p>〒882-0862 宮崎県延岡市浜町５０６７ クレールダイワ 207号室</p>
+                                        <p>〒882-0862 宮崎県延岡市浜町５０６７<br>クレールダイワ 207号室</p>
                                     </li>
                                     <li class="access-list-item">
                                         <h3>営業時間</h3>
@@ -210,7 +234,7 @@
                                 <!-- <p class="footnote">※</p> -->
                             </div>
 
-                            <div class="access-map">
+                            <div class="access-map fade-up">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.9575792241098!2d131.6792934203128!3d32.56067920800349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354719b9a34ffc53%3A0x14a39dd52b19d591!2z44Kv44Os44O844Or44OA44Kk44Ov!5e0!3m2!1sen!2sjp!4v1775541303521!5m2!1sen!2sjp"
                                     style="border:0;" allowfullscreen="" loading="lazy"
@@ -219,12 +243,15 @@
                         </div>
                     </section>
 
+                    <section class="footer">©2026 carus</section>
+
                 </div>
                 
             </main>
     
         </div>
         <script src="js/hamburger.js"></script>
+        <script src="js/fade-up.js"></script>
 
 </body>
 </html>
