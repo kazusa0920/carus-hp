@@ -286,6 +286,7 @@ body {
 .main {
     margin-left: clamp(260px, 23vw, 450px);
     width: calc(100% - clamp(260px, 23vw, 450px));
+    transition: all 0.3 ease-in-out;
 }
 
 
@@ -535,6 +536,7 @@ body {
     .main {
         margin-left: 0;
         width: 100%;
+        transition: all 0.3 ease-in-out;
     }
 
     ..menu-contents {
