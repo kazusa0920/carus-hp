@@ -2,9 +2,11 @@
     --bg-primary: #fcefe7;
     --bg-primary-light: #fafafa;
     --bg-accent: #4f4c4a;
+    --bg-goods: #737a73;
 
     --border-primary: #252525;
     --border-light: #c0c0c0;
+    --border-gray: #4f4c4a;
 
     --font-primary: #333333;
     --font-gray: #4f4c4a;
@@ -23,17 +25,42 @@ body {
     font-style: normal;
     letter-spacing: 0.1em;
     color: var(--font-primary);
+
+    background-color: var(--bg-primary-light);
+
+    overflow-x: hidden;
 }
 
 .container {
     width: min(1270px, 100%);
     margin-inline: auto;
     padding-inline: clamp(10px, 5vw, 100px);
+    position: relative;
+    background: #fafafa;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100%;
+    background: #fafafa;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100%;
+    background: #fafafa;
 }
 
 section {
     margin-bottom: 100px;
-
     scroll-margin-top: 60px;
 }
 
