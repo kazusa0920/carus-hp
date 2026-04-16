@@ -481,6 +481,10 @@ body {
     background-color: var(--bg-goods);
 }
 
+.bold {
+    font-weight: 600;
+}
+
 .about-right {
     position: relative;
     object-fit: cover;
