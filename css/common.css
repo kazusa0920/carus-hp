@@ -81,7 +81,7 @@ section {
     content: "";
     flex: 1;
     height: 1px;
-    background: #000;
+    background: var(--border-primary);
 }
 
 .section-title::before {
@@ -90,6 +90,14 @@ section {
 
 .section-title::after {
     margin-left: 20px;
+}
+
+.goods .section-title::before,
+.goods .section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--bg-primary);
 }
 
 
