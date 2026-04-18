@@ -320,6 +320,16 @@ body {
     margin-bottom: 0;
 }
 
+.hero-title {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.wf-active .hero-title,
+.wf-inactive .hero-title {
+    opacity: 1;
+}
+
 /* .hero img {
     width: 100%;
     height: 100%;
