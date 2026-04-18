@@ -16,7 +16,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    
 }
 
 
@@ -28,7 +28,10 @@ body {
     color: var(--font-primary);
 
     background-color: var(--bg-primary-light);
+}
 
+html, body {
+    width: 100%;
     overflow-x: hidden;
 }
 
