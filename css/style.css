@@ -481,23 +481,43 @@ body {
     row-gap: 30px;
 }
 
-.about-left-text {
+/* .about-left-text {
     text-align: start;
     line-height: 2.5;
+} */
+
+.about-left-text {
+    text-align: left;
+    line-height: 2;
 }
 
-.about-left-text span::before {
-    content: "";
-    width: 4px;
-    height: 4px;
-    border-radius: 100vh;
-    margin-right: 4px;
-    background-color: var(--bg-goods);
+.about-left-text p {
+    margin-bottom: 1.2em;
 }
 
-.bold {
+.about-left-text p:last-child {
+    margin-bottom: 0;
+}
+
+.top {
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .about-left-text {
+        line-height: 1.9;
+        text-align: left !important;
+    }
+
+    .about-left-text p {
+        margin-bottom: 1em;
+    }
+
+    .top {
+        text-align: center;
+    }
+}
+
 
 .about-right {
     position: relative;
